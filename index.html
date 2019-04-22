@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+      
+    <div class="container">
+
+      <div class="namePlate none" id="namePlate">
+        <img src="./assets/images/character-plate.png"> 
+        <!-- <img src="./assets/images/life-bar.png"> -->
+      </div>
+
+      <div class="navigation none" id="navigation">
+        <div><a href="#"><img src="./assets/images/home.png" id="jumpZoneHome"></a></div>
+        <div><a href="#"><img src="./assets/images/one.png" id="jumpZoneOne"></a></div>
+        <div><a href="#"><img src="./assets/images/two.png" id="jumpZoneTwo"></a></div>
+        <div><a href="#"><img src="./assets/images/three.png" id="jumpZoneThree"></a></div>
+      </div>
+
+      <div class="zoneHome" id="zoneHome">
+
+        <div class="welcome">
+          <img src="./assets/images/close.png" id="closeWelcome">
+          <p>Welcome to your story hero. You are the most powerful hero in all of the land, feared by villians, and swooned for by 
+            lovely maidens. You are ROGER sorcer supreme! The evil overlord Patrica, the queen of the damned, has unleashed her 
+            armys upon the world. You have discovered Patrica's evil plan to steal all the fun from the world, and horde it for her own 
+            selfish gains! Only your mightly magic can stop her deadly army Patrica wishes to unleash upon the world. Hero, 
+            will you step up to the challange and stop the evil queen Patrica?
+          </p>
+        </div>
+
+      </div>
+
+      <div class="zoneOne none" id="zoneOne">
+        <div class="zoneOneFightOne fightSize">
+          <a href="#"><img src="./assets/images/one-star-skull.png" id="zoneOneFightOneImg" class="fight levelOne areaZero"/></a>
+        </div>
+        <div class="zoneOneFightTwo fightSize">
+          <a href="#"
+            ><img src="./assets/images/one-star-skull.png" id="zoneOneFightTwoImg" class="fight levelOne areaZero"  
+          /></a>
+        </div>
+        <div class="zoneOneFightThree fightSize">
+          <a href="#"
+            ><img src="./assets/images/two-star-skull.png" id="zoneOneFightThreeImg" class="fight levelOne areaOne"
+          /></a>
+        </div>
+        <div class="zoneOneFightFour fightSize">
+          <a href="#"
+            ><img src="./assets/images/two-star-skull.png" id="zoneOneFightFourImg" class="fight levelOne areaOne"
+          /></a>
+        </div>
+        <div class="zoneOneFightFive fightSize">
+          <a href="#"
+            ><img src="./assets/images/three-star-skull.png" id="zoneOneFightFiveImg" class="fight levelOne areaTwo"
+          /></a>
+        </div>
+        <div class="zoneOneFightSix fightSize">
+          <a href="#"
+            ><img src="./assets/images/three-star-skull.png" id="zoneOneFightSixImg" class="fight levelOne areaTwo"
+          /></a>
+        </div>        
+      </div>
+
+      <div class="zoneTwo none" id="zoneTwo"></div>
+
+      <div class="zoneThree none" id="zoneThree"></div>
+
+      <div class="fightScene none" id="fightScene">
+        
+
+        <div id="attackWindow" class="attackWindow">
+
+          <div id="attackTitle" class="attackTitle">
+            <p>Roger vs 3 Monsters!</p> 
+          </div>
+          
+          <div id="lifeData" class="lifeData">
+              Life Data
+          </div>
+
+          <div id="menuHolder" class="menuHolder">
+              
+            <div id="attackMenu" class="attackMenu">
+
+                </div>
+  
+              <div id="attackTargets" class="attackTargets">
+              </div>
+          </div>
+
+          <div id="battleText" class="battleText">
+
+          </div>
+
+
+
+        </div>
+
+
+
+        <div id="monsterPlacementBox" class="monsterPlacementBox"></div>
+        <div id="heroPlacementBox" class="heroPlacementBox"></div>
+
+      </div>
+
+    </div>
+  </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

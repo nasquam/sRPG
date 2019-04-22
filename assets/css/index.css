@@ -1,0 +1,271 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("/assets/images/zone-background.jpg");
+  background-repeat: repeat-x;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.namePlate {
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 10px;
+  width: 250px;
+  height: 110px;
+}
+
+.namePlate img {
+  width: 100%;
+  display: inline;
+}
+
+.fightSize {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+}
+
+.fightSize img {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation {
+  margin-top: calc(50vh - 150px);
+  margin-right: auto;
+  position: fixed;
+  z-index: 100;
+  padding: 10px;
+}
+
+.zoneHome {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assets/images/home-blur.jpg");
+  background-size: cover;
+}
+
+.welcome {
+  width: 1200px;
+  height: 675px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("/assets/images/welcome.png");
+  background-size: cover;
+  display: flex;
+}
+
+.welcome p {
+  position: absolute;
+  width: 1100px;
+  margin-top: 150px;
+  margin-left: 50px;
+  font-family: "High Tower Text";
+  font-size: 2.5rem;
+}
+
+.welcome img {
+  margin-left: 1165px;
+  margin-top: 50px;
+  height: 60px;
+}
+
+.welcome:hover img {
+  cursor: pointer;
+}
+
+/* Start Zone One */
+
+.zoneOne {
+  min-width: 1600px;
+  min-height: 900px;
+  background-image: url("/assets/images/zone-one.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zoneOneFightOne {
+  position: absolute;
+  margin-left: 632px;
+  margin-top: 450px;
+}
+
+.zoneOneFightTwo {
+  margin-left: 935px;
+  margin-top: 365px;
+}
+
+.zoneOneFightThree {
+  margin-left: 1232px;
+  margin-top: 450px;
+}
+
+.zoneOneFightFour {
+  margin-left: 255px;
+  margin-top: 210px;
+}
+
+.zoneOneFightFive {
+  margin-left: 875px;
+  margin-top: 275px;
+}
+
+.zoneOneFightSix {
+  margin-left: 1005px;
+  margin-top: 130px;
+}
+
+/* End Zone One */
+
+/* Start Zone Two */
+
+.zoneTwo {
+  min-width: 1600px;
+  min-height: 900px;
+  background-image: url("/assets/images/zone-two.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* End Zone Two */
+
+/* Start Zone Three */
+
+.zoneThree {
+  min-width: 1600px;
+  min-height: 900px;
+  background-image: url("/assets/images/zone-three.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* End Zone Three */
+
+/* Start Fight Scene */
+
+.fightScene {
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  background: black;
+  position: absolute;
+  background-image: url("/assets/images/zone-one-fight-one.png");
+  background-size: cover;
+}
+
+.heroPlacementBox {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  margin-top: 550px;
+  margin-left: 450px;
+}
+
+.monsterPlacementBox {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  margin-top: 550px;
+  margin-left: 1050px;
+  display: flex;
+}
+
+.attackWindow {
+  position: absolute;
+  padding-top: 75px;
+  width: 900px;
+  /* height: 325px; */
+  background-image: url("/assets/images/attack-menu.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: calc((100vw / 2) - 350px);
+  margin-top: 100px;
+  /* overflow: hidden; */
+  font-size: 1.5rem;
+}
+
+.attackTitle {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.lifeData {
+  align-content: center;
+  box-sizing: border-box;
+  background-color: red;
+}
+
+.menuHolder {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.attackMenu {
+  /* flex-grow: 1; */
+  width: 50%;
+  height: 90%;
+  padding: 10px;
+  background-color: aquamarine;
+}
+
+.attackMenu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.attackMenu li {
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.attackMenu li:hover {
+  color: blueviolet;
+}
+
+.attackTargets {
+  /* flex-grow: 1; */
+  width: 50%;
+  padding: 10px;
+  background-color: aquamarine;
+  border-left: 1px solid #333333;
+}
+
+.attackTargets ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.battleText {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: red 2px solid;
+  box-sizing: border-box;
+}
