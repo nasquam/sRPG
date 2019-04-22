@@ -69,7 +69,7 @@ export class Hero {
 
   generateHeroSprite() {
     let heroSprite = document.createElement("img");
-    heroSprite.setAttribute("src", "../../assets/images/wizard.png");
+    heroSprite.setAttribute("src", "../assets/images/wizard.png");
     heroSprite.setAttribute("width", "250px")
     heroSprite.setAttribute("height", "250px")
     return heroSprite;
