@@ -110,13 +110,13 @@ export class Monster {
     monsterSprite.setAttribute("height", "250px");
 
     if (monster.level == 1) {
-      monsterSprite.setAttribute("src", "/assets/images/goblin-001.png");
+      monsterSprite.setAttribute("src", "../../assets/images/goblin-001.png");
       return monsterSprite;
     } else if (monster.level == 2) {
-      monsterSprite.setAttribute("src", "/assets/images/goblin-002.png");
+      monsterSprite.setAttribute("src", "../../assets/images/goblin-002.png");
       return monsterSprite;
     } else if (monster.level == 3) {
-      monsterSprite.setAttribute("src", "/assets/images/goblin-003.png");
+      monsterSprite.setAttribute("src", "../../assets/images/goblin-003.png");
       return monsterSprite;
     }
   }

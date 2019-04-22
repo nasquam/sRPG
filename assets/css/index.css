@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url("/assets/images/zone-background.jpg");
+  background-image: url("../../assets/images/zone-background.jpg");
   background-repeat: repeat-x;
 }
 
@@ -58,7 +58,7 @@ body {
 .zoneHome {
   width: 100vw;
   height: 100vh;
-  background-image: url("/assets/images/home-blur.jpg");
+  background-image: url("../../assets/images/home-blur.jpg");
   background-size: cover;
 }
 
@@ -68,7 +68,7 @@ body {
   margin-top: 150px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("/assets/images/welcome.png");
+  background-image: url("../../assets/images/welcome.png");
   background-size: cover;
   display: flex;
 }
@@ -97,7 +97,7 @@ body {
 .zoneOne {
   min-width: 1600px;
   min-height: 900px;
-  background-image: url("/assets/images/zone-one.png");
+  background-image: url("../../assets/images/zone-one.png");
   background-size: contain;
   background-repeat: no-repeat;
   margin-left: auto;
@@ -142,7 +142,7 @@ body {
 .zoneTwo {
   min-width: 1600px;
   min-height: 900px;
-  background-image: url("/assets/images/zone-two.png");
+  background-image: url("../../assets/images/zone-two.png");
   background-size: contain;
   background-repeat: no-repeat;
   margin-left: auto;
@@ -156,7 +156,7 @@ body {
 .zoneThree {
   min-width: 1600px;
   min-height: 900px;
-  background-image: url("/assets/images/zone-three.png");
+  background-image: url("../../assets/images/zone-three.png");
   background-size: contain;
   background-repeat: no-repeat;
   margin-left: auto;
@@ -171,9 +171,8 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 200;
-  background: black;
   position: absolute;
-  background-image: url("/assets/images/zone-one-fight-one.png");
+  background-image: url("../../assets/images/zone-one-fight-one.png");
   background-size: cover;
 }
 
@@ -199,7 +198,7 @@ body {
   padding-top: 75px;
   width: 900px;
   /* height: 325px; */
-  background-image: url("/assets/images/attack-menu.png");
+  background-image: url("../../assets/images/attack-menu.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin-left: calc((100vw / 2) - 350px);
