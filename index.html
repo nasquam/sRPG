@@ -11,8 +11,12 @@
       
     <div class="container">
 
+        <div id="youLost" class="youLost none">
+          <p id="playAgain">You Lost, Play Again?</p>
+        </div>
+
       <div class="namePlate none" id="namePlate">
-        <img src="./assets/images/character-plate.png"> 
+        <img src="./assets/images/character-plate.png" id="healHeroToFull"> 
         <!-- <img src="./assets/images/life-bar.png"> -->
       </div>
 
@@ -80,39 +84,33 @@
           <div id="attackTitle" class="attackTitle">
             <p>Roger vs 3 Monsters!</p> 
           </div>
-          
+
           <div id="lifeData" class="lifeData">
               Life Data
           </div>
 
           <div id="menuHolder" class="menuHolder">
-              
-            <div id="attackMenu" class="attackMenu">
-
-                </div>
-  
-              <div id="attackTargets" class="attackTargets">
-              </div>
+              <div id="attackMenu" class="attackMenu"></div>
+              <div id="attackTargets" class="attackTargets"></div>
           </div>
 
-          <div id="battleText" class="battleText">
-
-          </div>
-
-
+          <div id="battleText" class="battleText"></div>
 
         </div>
-
-
-
         <div id="monsterPlacementBox" class="monsterPlacementBox"></div>
         <div id="heroPlacementBox" class="heroPlacementBox"></div>
-
       </div>
-
     </div>
+
+    
+
+
+
   </div>
 
+
+
     <script src="./index.js" type="module"></script>
+    <!-- <script src="./dist/sRPG.bundle.js" type="module"></script> -->
   </body>
 </html>

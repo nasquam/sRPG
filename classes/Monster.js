@@ -1,34 +1,35 @@
 export class Monster {
   constructor(zone, area) {
+    this.monsterNames = [
+      "The Unknown",
+      "Emberhag",
+      "The Crazy Entity",
+      "Vortexhood",
+      "Hollow Man",
+      "Feral Nether",
+      "Jagged Freak",
+      "Chaotic Vision",
+      "Blightghoul",
+      "Stinkflayer",
+      "The Great Unknown",
+      "The Great Emberhag"
+    ];
+
     this.uuid = this.createGuid();
     this.level = this.getLevel(zone, area);
     this.power = this.level * 10;
     this.name = this.monsterNames[this.level - 1];
+
+    this.health = 20;
+    this.xp = 0;
+    this.xpToNextLevel = 30;
+    this.KOed = false;
   }
 
-  health = 20;
-  image = "path/to/some/image.jpg";
-  xp = 0;
-  xpToNextLevel = 30;
-  KOed = false;
-  monsterNames = [
-    "The Unknown",
-    "Emberhag",
-    "The Crazy Entity",
-    "Vortexhood",
-    "Hollow Man",
-    "Feral Nether",
-    "Jagged Freak",
-    "Chaotic Vision",
-    "Blightghoul",
-    "Stinkflayer",
-    "The Great Unknown",
-    "The Great Emberhag"
-  ];
 
 
   attack() {
-    let attack = Math.random() * (this.power * 2);
+    let attack = Math.random() * (this.power * 1);
     attack = Math.trunc(attack);
     return attack;
   }
@@ -61,7 +62,16 @@ export class Monster {
 
   takeDamage(damage) {
     this.health = this.health - damage;
+
+    if(this.health < 1){
+      this.KOed = true;
+    }
+
     return this.health;
+  }
+
+  getKOed() {
+    return this.KOed;
   }
 
   getXP(xp) {
@@ -106,8 +116,8 @@ export class Monster {
 
   generateMonsterSprite(monster) {
     let monsterSprite = document.createElement("img");
-    monsterSprite.setAttribute("width", "250px");
-    monsterSprite.setAttribute("height", "250px");
+    monsterSprite.setAttribute("width", "256px");
+    monsterSprite.setAttribute("height", "256px");
 
     if (monster.level == 1) {
       monsterSprite.setAttribute("src", "../assets/images/goblin-001.png");

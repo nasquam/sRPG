@@ -1,16 +1,27 @@
 export class Hero {
+
   constructor(name) {
     this.name = name;
-    this.uuid = this.createGuid();
+    this.uuid = _createGuid();
+    this.level = 1;
+    this.power = this.level * 10;
+    this.health = 100;
+    this.xp = 0;
+    this.xpToNextLevel = 30;
+    this.KOed = false;
   }
 
-  level = 1;
-  power = this.level * 10;
-  health = 100;
-  image = "path/to/some/image.jpg";
-  xp = 0;
-  xpToNextLevel = 30;
-  KOed = false;
+  isKOed(){
+     if(this.health <= 0){
+      return true
+    } else if (this.health > 0){
+      return false
+    }
+  }
+
+  getHealth(){
+    return this.health;
+  }
 
   attack() {
     let attack = Math.random() * this.power;
@@ -32,6 +43,15 @@ export class Hero {
     let heal = Math.floor(Math.random() * (max - min + 1)) + min;
     heal = Math.trunc(heal);
     return heal;
+  }
+
+  takeHeal(healAmmount){
+    this.health = this.health + healAmmount;
+    return this.health
+  }
+
+  healToFull(){
+    this.health = 100;
   }
 
   runaway() {
@@ -59,19 +79,19 @@ export class Hero {
     return this.xpToNextLevel;
   }
 
-  createGuid() {
-    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(c) {
-      var r = (Math.random() * 16) | 0,
-        v = c === "x" ? r : (r & 0x3) | 0x8;
-      return v.toString(16);
-    });
-  }
-
   generateHeroSprite() {
     let heroSprite = document.createElement("img");
     heroSprite.setAttribute("src", "../assets/images/wizard.png");
-    heroSprite.setAttribute("width", "250px")
-    heroSprite.setAttribute("height", "250px")
+    heroSprite.setAttribute("width", "250px");
+    heroSprite.setAttribute("height", "250px");
     return heroSprite;
   }
+}
+
+function _createGuid() {
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(c) {
+    var r = (Math.random() * 16) | 0,
+      v = c === "x" ? r : (r & 0x3) | 0x8;
+    return v.toString(16);
+  });
 }
